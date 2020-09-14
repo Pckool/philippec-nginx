@@ -9,8 +9,8 @@ module.exports = {
       user : 'root',
       host : 'philippec.me',
       ref  : 'origin/master',
-      repo : 'GIT_REPOSITORY',
-      path : 'DESTINATION_PATH',
+      repo : 'git@github.com:Pckool/philippec-nginx.git',
+      path : '/var/docker/images/nginx',
       'pre-deploy-local': '',
       'post-deploy' : 'pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
