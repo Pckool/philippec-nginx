@@ -13,7 +13,7 @@ module.exports = {
       path : '/var/docker/images/nginx',
       'pre-deploy-local': '',
       'post-deploy' : 'pm2 reload ecosystem.config.js --env production',
-      'pre-deploy': 'mkdir /var/docker || mkdir /var/docker/images || mkdir /var/docker/images/nginx'
+      'pre-deploy': 'mkdir -p /var/docker || mkdir -p /var/docker/images || mkdir -p /var/docker/images/nginx'
     }
   }
 };
