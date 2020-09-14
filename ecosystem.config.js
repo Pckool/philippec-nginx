@@ -6,7 +6,7 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'root',
+      user : 'docker-proxy',
       host : 'philippec.me',
       ref  : 'origin/master',
       repo : 'git@github.com:Pckool/philippec-nginx.git',
