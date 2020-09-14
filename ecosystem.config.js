@@ -15,7 +15,7 @@ module.exports = {
       'pre-deploy-local': '',
       'pre-setup': 'npm i -g pm2',
       'post-deploy' : './destroy.sh || pm2 startOrRestart ecosystem.config.js --env production -l /var/docker/images/nginx/.logs',
-      'pre-deploy': 'mkdir -p /var/docker || mkdir -p /var/docker/images || mkdir -p /var/docker/images/nginx'
+      'pre-deploy': 'umask 003 || mkdir -p /var/docker || mkdir -p /var/docker/images || mkdir -p /var/docker/images/nginx'
     }
   }
 };
