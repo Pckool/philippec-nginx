@@ -1,1 +1,1 @@
-docker run -it --rm -d -p 8080:80 --name web -v ~/web-data:/usr/share/nginx nginx
+docker build -t philippec-nginx:1.0 . && docker run -it --rm -d -p 80:80 --name nginx -v ~/web-data:/usr/share/nginx philippec-nginx:1.0
