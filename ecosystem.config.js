@@ -14,7 +14,7 @@ module.exports = {
       path : '/var/docker/images/nginx',
       'pre-deploy-local': '',
       'pre-setup': 'npm i -g pm2',
-      'post-deploy' : 'chmod -R 774 /var/docker/images/nginx/source/ && ./destroy.sh || ./build.sh',
+      'post-deploy' : 'chmod -R 774 /var/docker/images/nginx/source/ && ./destroy.sh || ./decompose.sh || ./compose.sh',
       'pre-deploy': 'umask 003 || mkdir -p /var/docker || mkdir -p /var/docker/images || mkdir -p /var/docker/images/nginx'
     }
   }
