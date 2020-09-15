@@ -1,2 +1,2 @@
 docker build -t philippec-nginx:1.0 .
-docker run -it -d -p 80:80 -p 443:443 --name nginx -v /usr/share/nginx:/usr/share/nginx -v /etc/ssl/certs/docker/nginx/:/etc/ssl/certs/docker/nginx/ philippec-nginx:1.0 
+docker run -it -d -p 80:80 -p 443:443 -p 8080:8080 --name nginx -v /usr/share/nginx:/usr/share/nginx -v /etc/ssl/certs/docker/nginx/:/etc/ssl/certs/docker/nginx/ philippec-nginx:1.0 
